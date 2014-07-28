@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Form Validator Sample</title>
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/formvalidator.js" type="text/javascript"></script>
+    <link href="css/formvalidator.css" rel="stylesheet" type="text/css" />
+    <link href="css/page.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#form").formValidator({
+                blankError: "Jose Nino Garcia",
+                errorMessageIdentifier: "errorMessage"
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <h2>Form Validator</h2>
+    
+    <div id="form">
+
+        <div id="errorMessage" style="display:none;"></div>
+
+        <label>First Name</label>
+        <input type="text" id="firstname" elem-name="firstname" />
+
+        <br/>
+
+        <label>Last Name</label>
+        <input type="text" id="lastname" elem-name="lastname" />
+
+        <br/>
+
+        <label>Age</label>
+        <input type="text" id="age" elem-name="age" />
+
+        <br/>
+
+        <label>Email Address</label>
+        <input type="text" id="email" elem-name="email" />
+
+        <br/>
+
+        <label>Enter Code</label>
+        <input type="text" id="code" elem-name="codes" />
+
+        <br/>
+
+        <label>Enter Decimal Value</label>
+        <input type="text" id="decimal" elem-name="decimals" />
+
+        <br/>
+        
+        <input type="button" name="" id="submit" value="Send" />
+
+    </div><!-- End of form -->
+
+</body>
+</html>
